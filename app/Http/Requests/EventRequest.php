@@ -28,6 +28,7 @@ class EventRequest extends FormRequest
             'city' => 'required',
             'private' => 'required',
             'description' => 'required',
+            'items' => 'required',
         ];
     }
 }
