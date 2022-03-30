@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('events', App\Http\Controllers\EventController::class);
+Route::resource('events', App\Http\Controllers\EventController::class)->middleware('auth');
 Route::get('/', [App\Http\Controllers\EventController::class, 'index']);
 // Route::get('/', [EventController::class, 'index']);
 // Route::get('/events/create', [EventController::class, 'create']);

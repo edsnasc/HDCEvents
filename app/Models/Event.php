@@ -24,4 +24,8 @@ class Event extends Model
         'items',
         'date',
     ];
+
+    public function user() {
+        return $this->belongsTo('App\Models\User');
+    }
 }

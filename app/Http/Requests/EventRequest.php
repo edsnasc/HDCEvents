@@ -25,11 +25,13 @@ class EventRequest extends FormRequest
     {
         return [
             'title' => 'required',
+            'date' => 'required',
             'city' => 'required',
             'private' => 'required',
             'description' => 'required',
             'items' => 'required',
-            'date' => 'required',
+            'user_id' => 'required'
         ];
+       
     }
 }
