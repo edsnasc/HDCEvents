@@ -15,6 +15,8 @@ class Event extends Model
 
     protected $dates = ['date'];
 
+    protected $guarded = [];
+
     protected $fillable = [
         'title', 
         'city', 
